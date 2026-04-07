@@ -2,20 +2,18 @@
 <html lang="en">
 
   <style>
-  /* OCULTA LA BARRA PERO PERMITE MOVER LA PÁGINA */
+  /* ESTO NO CORTA EL BOTÓN Y ESCONDE LA BARRA POR DESPLAZAMIENTO */
   html, body {
     margin: 0 !important;
     padding: 0 !important;
-    min-height: 100% !important; /* Permite que crezca según el contenido */
-    overflow-y: auto !important;   /* ACTIVA EL SCROLL PARA QUE APAREZCA EL BOTÓN */
-    scrollbar-width: none !important; /* Esconde barra en Firefox */
-    -ms-overflow-style: none !important; /* Esconde barra en Edge */
+    overflow-x: hidden !important; /* Evita que se mueva hacia los lados */
+    background-color: #000 !important;
   }
 
-  /* Esconde la barra blanca en Chrome y Safari */
+  /* El truco final para Chrome/Edge: Esconder la barra sin romper nada */
   ::-webkit-scrollbar {
-    display: none !important;
-    width: 0 !important;
+    width: 0px !important;
+    background: transparent !important;
   }
 </style>
 

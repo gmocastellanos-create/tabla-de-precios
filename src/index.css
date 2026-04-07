@@ -65,3 +65,14 @@
     @apply bg-surface/80 backdrop-blur-xl border-b border-outline-variant/10;
   }
 }
+/* Quitar barra de desplazamiento en toda la app */
+html, body {
+  overflow: hidden !important;
+  height: 100%;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}

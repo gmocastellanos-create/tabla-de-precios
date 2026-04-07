@@ -1,5 +1,22 @@
 <!doctype html>
 <html lang="en">
+  <style>
+  /* ESTO ELIMINA LA BARRA VISUAL PERO PERMITE EL SCROLL */
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100% !important;
+    overflow-y: overlay !important; /* Permite scroll sobre el contenido */
+    scrollbar-width: none !important; /* Firefox */
+    -ms-overflow-style: none !important; /* IE/Edge */
+  }
+
+  /* Para Chrome, Safari y Edge (la barra blanca que ves) */
+  ::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+  }
+</style>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

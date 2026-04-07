@@ -16,6 +16,7 @@ export default function Pricing() {
   const plans = [
     { 
       name: "Vitrina de Conversión", 
+      subtitle: "Landing Page",
       price: "$750.000", 
       features: ["1 Página de Alto Impacto", "Formulario CRM", "Botón WhatsApp", "SEO On-page"],
       fullDetails: "Ideal para campañas de posicionamiento rápido. Incluye diseño responsivo, optimización de velocidad y configuración de píxeles para seguimiento de audiencia.",
@@ -23,6 +24,7 @@ export default function Pricing() {
     },
     { 
       name: "Ecosistema de Autoridad", 
+      subtitle: "Sitio Pro de 5 secciones",
       price: "$1.200.000", 
       features: ["5 Secciones de Prestigio", "SEO Avanzado", "Chatbot IA Básico", "Diseño UI/UX de Élite"], 
       featured: true,
@@ -31,6 +33,7 @@ export default function Pricing() {
     },
     { 
       name: "Hub de Negocios", 
+      subtitle: "E-commerce completo",
       price: "$1.800.000", 
       features: ["Vitrina de Productos Ilimitada", "Pasarela de Pagos", "Panel de Control", "Gestión Automatizada"],
       fullDetails: "Tu plataforma de negocios 24/7. Configuración de pasarela de pagos, gestión de inventario inteligente y capacitación para dominar tu plataforma.",
@@ -61,7 +64,8 @@ export default function Pricing() {
                 Más Popular
               </div>
             )}
-            <h3 className="text-xl font-semibold uppercase tracking-widest mb-2">{plan.name}</h3>
+            <h3 className="text-xl font-semibold uppercase tracking-widest mb-1">{plan.name}</h3>
+            <p className="text-[10px] font-bold text-on-surface-variant uppercase tracking-[0.2em] mb-4">{plan.subtitle}</p>
             <div className="text-4xl font-black text-primary-container mb-10">{plan.price} <span className="text-xs text-on-surface-variant">COP</span></div>
             
             <ul className="space-y-4 mb-8">

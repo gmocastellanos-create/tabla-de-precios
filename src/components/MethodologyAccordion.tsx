@@ -29,7 +29,7 @@ function AccordionItem({ title, icon, children, isOpen, onClick }: AccordionItem
             {icon}
           </div>
           <span className={cn(
-            "text-lg font-black uppercase tracking-tight transition-colors duration-500",
+            "text-sm md:text-lg font-black uppercase tracking-tight transition-colors duration-500",
             isOpen ? "text-on-surface" : "text-on-surface-variant group-hover:text-on-surface"
           )}>
             {title}
@@ -124,7 +124,7 @@ export default function MethodologyAccordion() {
               <Bot className="w-8 h-8" />
             </div>
             <div className="text-left">
-              <h2 className="text-3xl font-semibold tracking-tighter uppercase mb-1">Nuestra Arquitectura de Conversión</h2>
+              <h2 className="text-xl md:text-3xl font-semibold tracking-tighter uppercase mb-1">Nuestra Arquitectura de Conversión</h2>
               <p className="text-xs font-black text-on-surface-variant uppercase tracking-[0.3em]">Haz clic para desglosar nuestra estrategia</p>
             </div>
           </div>

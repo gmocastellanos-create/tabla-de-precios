@@ -65,22 +65,3 @@
     @apply bg-surface/80 backdrop-blur-xl border-b border-outline-variant/10;
   }
 }
-/* PERMITIR DESPLAZAMIENTO PERO ESCONDER LA BARRA VISUAL */
-html, body {
-  overflow-y: auto !important; /* Permite el desplazamiento vertical */
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  
-  /* Esconder barra en Firefox */
-  scrollbar-width: none !important; 
-  /* Esconder barra en IE/Edge */
-  -ms-overflow-style: none !important; 
-}
-
-/* Esconder barra en Chrome, Safari y navegadores basados en Chromium */
-body::-webkit-scrollbar {
-  display: none !important;
-  width: 0 !important;
-  background: transparent !important;
-}

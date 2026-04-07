@@ -88,7 +88,7 @@ export default function App() {
             className="relative z-10"
           >
             <span className="text-xs font-black text-primary-container uppercase tracking-[0.5em] mb-8 block">La Realidad Invisible</span>
-            <h2 className="text-6xl md:text-8xl font-semibold tracking-tighter leading-[0.85] mb-12">
+            <h2 className="text-4xl md:text-8xl font-semibold tracking-tighter leading-[0.85] mb-12">
               Ser invisible es <br />
               <span className="text-primary-container">ser inexistente.</span>
             </h2>
@@ -126,7 +126,7 @@ export default function App() {
             <span className="text-xs font-black text-primary-container uppercase tracking-[0.4em] mb-6 block">
               Arquitectura de Prestigio
             </span>
-            <h1 className="text-6xl md:text-7xl font-semibold tracking-tighter leading-[0.9] mb-8">
+            <h1 className="text-4xl md:text-7xl font-semibold tracking-tighter leading-[0.9] mb-8">
               No diseñamos sitios; construimos tu <span className="text-primary-container">Ecosistema</span> de Autoridad.
             </h1>
             <p className="text-lg text-on-surface-variant max-w-xl mb-12 leading-relaxed">
@@ -186,10 +186,10 @@ export default function App() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { title: "Propiedad Total", desc: "Mantenimiento $0 de por vida. Tu ecosistema digital es un activo real de tu empresa.", icon: <ShieldCheck /> },
+              { title: "Propiedad Total", desc: "Mantenimiento $0 de por vida. Tu ecosistema digital es un activo real de tu empresa. (Cambios y modificación aplican condiciones)", icon: <ShieldCheck /> },
               { title: "Diseño de Prestigio", desc: "Sin plantillas. Arquitectura visual diseñada para proyectar liderazgo inmediato.", icon: <Layout /> },
-              { title: "Inteligencia 24/7", desc: "Chatbot IA de última generación para atención y filtrado de prospectos.", icon: <Bot /> },
-              { title: "Estrategia de Élite", desc: "Asesoría en posicionamiento y desarrollo de contenido de alto impacto.", icon: <Sparkles /> }
+              { title: "Inteligencia 24/7", desc: "Chatbot IA de última generación para atención y filtrado de prospectos. (Funcional limitado a condiciones de la IA)", icon: <Bot /> },
+              { title: "Estrategia de Élite", desc: "Asesoría en posicionamiento y desarrollo de contenido de alto impacto. Te indicamos como la IA trabaja para ti.", icon: <Sparkles /> }
             ].map((val, i) => (
               <motion.div 
                 key={i}
@@ -216,17 +216,11 @@ export default function App() {
           <h2 className="text-4xl font-semibold tracking-tighter uppercase mb-4">Bonos Indispensables</h2>
           <p className="text-xs font-black text-primary-container uppercase tracking-[0.3em]">Acelera tu posicionamiento</p>
         </div>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-1 max-w-2xl mx-auto gap-8">
           {[
             {
-              title: "Capacitación en Contenido",
-              desc: "Aprende a desarrollar contenido de alto impacto para Instagram, TikTok y Facebook. Te enseñamos las estrategias de IA que funcionan hoy.",
-              icon: <Users className="w-10 h-10" />,
-              details: "Lo real, te enseñamos con aplicar la AI para generar contenido grafico"
-            },
-            {
               title: "Licencia WhatsApp Masivo",
-              desc: "Envía mensajes a toda tu base de datos de forma segura y automatizada. La herramienta definitiva para remarketing de élite.",
+              desc: "Envía mensajes a toda tu base de datos de forma segura y automatizada. La herramienta definitiva para remarketing de élite. (Bono de acuerdo a disponibilidad)",
               icon: <Smartphone className="w-10 h-10" />,
               details: "Incluye: Software de escritorio, tutorial de configuración y plantillas de mensajes persuasivos."
             }
@@ -304,16 +298,16 @@ export default function App() {
           className="neumorphic-raised p-20 md:p-32 rounded-[4rem] bg-surface max-w-5xl mx-auto relative overflow-hidden"
         >
           <div className="absolute top-0 left-0 w-full h-1 bg-primary-container/20" />
-          <h2 className="text-5xl md:text-7xl font-semibold tracking-tighter mb-12 leading-tight">
-            ¿Listo para dominar tu <span className="text-primary-container">presencia</span> digital?
+          <h2 className="text-3xl md:text-7xl font-semibold tracking-tighter mb-12 leading-[1.1] max-w-4xl mx-auto">
+            ¿Listo para dominar <br className="md:hidden" /> tu <span className="text-primary-container">presencia</span> <br /> digital?
           </h2>
           <a 
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block neumorphic-sunken bg-surface-container-lowest px-16 py-8 rounded-3xl font-black text-2xl md:text-4xl text-primary-container hover:scale-105 transition-transform neumorphic-button-active uppercase tracking-tighter"
+            className="inline-block w-full max-w-xs md:max-w-2xl neumorphic-sunken bg-surface-container-lowest px-4 py-6 rounded-3xl font-black text-base md:text-2xl text-primary-container hover:scale-105 transition-transform neumorphic-button-active uppercase tracking-widest whitespace-nowrap"
           >
-            Agenda una asesoría gratuita hoy mismo
+            Contáctanos
           </a>
         </motion.div>
       </section>
@@ -336,6 +330,12 @@ export default function App() {
           <div className="text-[10px] font-bold text-on-surface-variant/30 uppercase tracking-widest">
             © 2024 Soluciones Digitales. All rights reserved.
           </div>
+          <a 
+            href="https://www.365.deymercadeoeficiente.com/"
+            className="neumorphic-raised neumorphic-button-active bg-surface px-6 py-3 rounded-xl text-[10px] font-black text-primary-container uppercase tracking-widest hover:scale-105 transition-transform"
+          >
+            Volver a nuestro sitio
+          </a>
         </div>
       </footer>
 
